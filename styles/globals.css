@@ -1,0 +1,64 @@
+textarea, input, button {
+  display: block;
+  margin: 10px 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+select {
+  margin: 0 5px 10px 5px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+label {
+  margin-right: 15px;
+}
+
+/* 例: タブレットサイズに対応 */
+@media (max-width: 768px) {
+  textarea, input, button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  textarea {
+      width: 90%;
+  }
+}
+
+
